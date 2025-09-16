@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-1)]
 public class Board : MonoBehaviour
@@ -73,6 +74,7 @@ public class Board : MonoBehaviour
         CountBlocks = 0;
         stepDelay = StartStepDelay;
         score = 0;
+        SceneManager.LoadScene(0);
 
         // Do anything else you want on game over here..
     }
